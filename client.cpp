@@ -32,6 +32,7 @@ void SendMsg(SOCKET s) {
 	cout << "Enter your chat name: " << endl;  //name of the sender
 	string name;
 	getline(cin, name);
+    cout << "Enter your message: " << endl;
 	string message;
 
 	while (1) {
