@@ -29,10 +29,10 @@ bool Initailize() {
 
 //sent multiple msg
 void SendMsg(SOCKET s) {
-	cout << "Enter your chat name: " << endl;  //name of the sender
+	cout << "Enter your chat name: ";  //name of the sender
 	string name;
 	getline(cin, name);
-    cout << "Enter your message: " << endl;
+    cout << "Enter your message: ";
 	string message;
 
 	while (1) {
