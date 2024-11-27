@@ -10,8 +10,6 @@ using namespace std;
 
 #pragma comment(lib, "ws2_32.lib")
 
-
-
 /*step
 		initailize winsock
 
@@ -52,11 +50,10 @@ void SendMsg(SOCKET s) {
 		if (message == "quit") {
 			cout << "disconnecting from the server" << endl;
 			break;
-		}
-
-		closesocket(s);
-		WSACleanup();
+		}		
 	}
+    closesocket(s);
+	WSACleanup();
 }
 
 //recieve multiple msg
